@@ -14,7 +14,7 @@ st.title('TEXTILE & CLOTHING EXPORTS FROM PAKISTAN')
 st.write("Source: Pakistan Bureau of Statistics")
 
 # to load dataset from computer as df
-df=pd.read_excel('monthly_textile_exports_pbs.xls')
+df=pd.read_excel('monthly_textile_exports_pbs.xls', engine='openpyxl')
 st.dataframe(df)
 # Get sum of values in a column 'Exports_US$'
 # for those rows only where 'year' is '2020'
