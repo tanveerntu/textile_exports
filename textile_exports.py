@@ -2,7 +2,6 @@ import streamlit as st
 import streamlit.components.v1 as components 
 import plotly.express as px 
 import pandas as pd 
-import openpyxl 
 
 
 st.set_page_config(page_title="Pakistan Textile Exports",
@@ -14,7 +13,7 @@ st.title('TEXTILE & CLOTHING EXPORTS FROM PAKISTAN')
 st.write("Source: Pakistan Bureau of Statistics")
 
 # to load dataset from computer as df
-df=pd.read_excel('monthly_textile_exports_pbs.xls', engine='openpyxl')
+df=pd.read_excel('monthly_textile_exports_pbs.xlsx')
 st.dataframe(df)
 # Get sum of values in a column 'Exports_US$'
 # for those rows only where 'year' is '2020'
