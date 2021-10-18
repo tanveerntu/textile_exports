@@ -152,15 +152,6 @@ fig_product_exports = px.bar(
 )
 st.plotly_chart(fig_product_exports)
 
-#bubble chart
-
-df_bubble = df_2020_wo_total.groupby(by=["Category"]).sum()[["Exports_US$"]].sort_values(by="Exports_US$")
-
-fig = px.scatter(df_bubble, y="Exports_US$", text = 'Exports_US$', size="Exports_US$")
-
-st.plotly_chart(fig)
-#fig_product_exports.update_traces(textposition='outside')
-
 
 #show dataframe table
 #st.dataframe(df)
