@@ -2,6 +2,7 @@ import streamlit as st
 import streamlit.components.v1 as components 
 import plotly.express as px 
 import pandas as pd 
+import xrld 
 
 
 st.set_page_config(page_title="Pakistan Textile Exports",
